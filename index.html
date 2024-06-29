@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="player-hand" class="player-area">
+    <!-- Player's Hand will be dynamically populated -->
+</div>
+
+<div id="game-board" class="game-board">
+    <!-- Game Board will be dynamically updated -->
+</div>
+
+<div class="player-status">
+    <h3>Player</h3>
+    <div id="player-health" class="health">Health: 750</div>
+    <div id="player-health-bar" class="health-bar"></div>
+    <div id="player-pips" class="pips">Pips: 0</div>
+    <div id="player-power-pips" class="pips">Power Pips: 0</div>
+    <div id="player-deck-size" class="deck-size">Deck Size: 0</div>
+</div>
+
+<div class="opponent-status">
+    <h3>Opponent</h3>
+    <div id="opponent-health" class="health">Health: 750</div>
+    <div id="opponent-health-bar" class="health-bar"></div>
+    <div id="opponent-pips" class="pips">Pips: 0</div>
+    <div id="opponent-power-pips" class="pips">Power Pips: 0</div>
+    <div id="opponent-deck-size" class="deck-size">Deck Size: 0</div>
+</div>
+
+<div id="game-log" class="game-log">
+    <!-- Game log messages will be dynamically added -->
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
